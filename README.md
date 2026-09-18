@@ -68,6 +68,18 @@ streamlit run app.py
 
 or double-click `start_app.bat`.
 
+## Deploy live on Streamlit Community Cloud (free)
+
+1. Push this repo to GitHub (done: `qasimzahoor825/AI-Credit-Card-Fraud-Detection`).
+2. Go to https://share.streamlit.io and sign in with the GitHub account that owns the repo.
+3. Click **New app** → select the repo `AI-Credit-Card-Fraud-Detection`, branch `main`,
+   main file `app.py`.
+4. Click **Deploy**. Trained models are already included in the `models/` directory, so the
+   app serves predictions immediately (no retraining on the server).
+5. After ~1 minute you get a live URL: `https://<app-name>.streamlit.app`.
+
+Python version is pinned via `runtime.txt`; dependencies come from `requirements.txt`.
+
 ## CSV format for batch detection
 
 Required columns:
